@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <title> Formulário </title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		.conteudo-menu{
+			background:#808080;
+			font-family:Times New Roman,Helvetica,sans-serif;
+			font-size:20px;
+			border-bottom:1px solid #ccc;
+			}
+
+		.menu-fixo{
+			z-index:9999;
+			position:fixed;
+			top:7;
+			width:880px;
+			height:20px;
+		}
+
+		.menu{
+			height:50px;
+		}
+		.menu ul{
+			list-style:none;
+			margin:0;
+		}
+
+		.menu ul li{
+			float:left;
+			margin-top:6px;
+			padding:6px;
+			border-right:1px dotted #ccc;
+		}
+
+		.menu ul li:first-child{
+			padding-left:0;
+		}
+
+		.menu ul li a{
+			color:#ADD8E6;
+			padding:10px 10px;
+			display:inline-block;
+			text-decoration:none;
+			
+		}
+
+		.menu ul li a:hover{
+			color:#7FFFD4;
+			text-decoration:underline;
+		}
+		
+		</style>
+		<link rel="stylesheet" type=" text/css" href="cinema.css" />
+		<script type="text/javascript">
+		function entrandoNome(){
+           msgNome.innerHTML="vazio";
+		}
+			
+		function saindoNome(){
+		    if(nome.value == ""){
+				alert("erro");
+		    }
+		}
+			
+		function entraComentAki(){
+		    msgComentário.innerHTML="vazio";
+		}
+			
+		function saiComentAki(){
+		   if(cometario.value.lenght < 100){
+                alert("erro");
+			}	
+        }
+		
+		function entraEmail(){
+			msgEmail.innerHTML="vazio";
+		}
+			
+		function saiEmail(){
+			if(email.value=="" || email.value.indexOf('@')==-1 || email.value('.')==-1){
+				alert("erro");
+			}
+		}
+		
+		</script>
+	</head>
+	<body>
+		<div class="conteudo-menu">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html"> Index </li></a>
+					<li><a href="Ação.html"> Ação </li></a>	 
+					<li><a href="Animação.html"> Animação </li></a>
+					<li><a href="Aventura.html"> Aventura </li></a>
+					<li><a href="Catastrofe.html"> Catastrofe </li> </a>
+					<li><a href="Cinema1.html"> Cinema </li></a>
+					<li><a href="Comedia.html"> Comédia </li></a>
+					<li><a href="formularioContato.html"> Contato </li></a>
+					<li><a href="Ficcao Cientifica.html"> Ficcao Cientifica </li></a>
+					<li><a href="cinema.css"> cinema </li></a>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+
+		<form action="filmes.php" method="post">
+		<div style="margin:5% 2% 4% 3%">
+            <marquee><h2>Tem alguma dúvida, sugestão ou crítica? Entre em contato com o autor do site!<br><br></h2></marquee>
+
+			Nome: <input type="text" id="nome" onblur="saindoNome()" id="nome" onfocus="entrandoNome()"><span id="msgNome"> </span><br><br>
+			E-mail: <input  type="text"  id="E-mail" name="email" onblur="saiEmail()" id="E-maiL" onfocus="entraEmail()"><br><br><span id="msgEmail"> </span><br><br>
+			Sexo:<input type="radio" id="sexo" name="masculino" value="masculino"> Masculino 
+				<input type="radio" id="sexo" name="feminino" value="feminino">  Feminino <br><br>
+			Cometário:<input type="text" id="cometario" name="cometario" onblur="saiComentAki()" id="cometario" onfocus="entraComentAki()"><br><span id="msgComentário"> </span>
+			<p>Selecione o assunto:</p>
+			<select name="assunto" style="border-radius:3px; border: 2px solid #ccc; background: #f2f2f2">
+                <option>Dúvidas</option>
+                <option>Sugestões</option>
+                <option>Críticas</option>
+                <option>Outros</option>
+            </select>
+
+			<p>Qual a nota você daria para o site?</p>
+                <input type="radio" name="nota" value="1">0<br>
+                <input type="radio" name="nota" value="2">5<br>
+                <input type="radio" name="nota" value="3">10<br>
+
+			<input type="submit" value="Enviar" style="border-radius:3px; border: 2px solid #ccc; background: #e6e6e6; height:25px; width:70px">
+			<input type="reset" value="Apagar" style="border-radius:3px;  border: 2px solid #ccc; background: #e6e6e6; height:25px; width:70px">
+
+	        
+	    </form><br>
+			<div align="center">
+                <p style="bottom:0; position:relative; overflow:hidden; color:black; font-family: currier">© 2018.</p>
+            </div>
+			
+	</body>
+</html>

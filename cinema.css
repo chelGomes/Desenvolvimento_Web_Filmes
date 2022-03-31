@@ -1,0 +1,107 @@
+body{
+     background-color: #D3D3D3;
+     margin: 1px;
+     padding: 1px;
+     background-repeat:repeat-x;
+     background-position:right bottom;
+    }
+
+	 
+#aa{
+	float: left;
+	}
+#aaa{
+	 float:right;
+    }
+#aaaa{
+	 text-align:center;
+     }
+	 
+#bb{
+	float: left;
+	}
+#bbb{
+	 float:right;
+    }
+#bbbb{
+	 text-align:center;
+     }
+#ccc{
+	 float:right;
+    }
+#cccc{
+	 text-align:center;
+     }
+	 
+#dd{
+	float: left;
+	}
+#ddd{
+	 float:right;
+    }
+#dddd{
+	 text-align:center;
+     }
+	 
+#ee{
+	float: left;
+	}
+#eee{
+	 float:right;
+    }
+#eeee{
+	 text-align:center;
+     }
+	 
+#ff{
+	float: left;
+	}
+#fff{
+	 float:right;
+    }
+#ffff{
+	 text-align:center;
+     }
+	 
+#gggg{
+	  text-align:center;
+     }
+
+#anima{
+	width: 150px;
+	height:100px;
+	float: left;
+}
+
+#acao{
+	width: 350px;
+	height:400px;
+	float: right;
+}
+
+#avent{
+	width: 250px;
+	height:150px;
+	float: left;
+}
+
+#catas{
+	width: 350px;
+	height:400px;
+	float: right;
+}
+#comed{
+	width: 150px;
+	height:100px;
+	float: left;
+}
+
+#cien{
+	
+	height:500px;
+	float: right;
+}
+
+
+
+		
