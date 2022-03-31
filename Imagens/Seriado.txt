@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+		<meta charset="utf-8">
+		<title> Os gêneros de Filmes </title>
+  </head>
+	<body>
+	<h1> Seriado </h1>
+	  <h2> Os Melhores Filmes de Seriado </h2>
+		<ol>
+		    <li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+		</ol>
+		 
+		<h3> Principais Atores de Seriado </h3>
+		  <ul>
+		     <li> </li>
+			 <li> </li>
+			 <li> </li>
+			 <li> </li>
+			 <li> </li>
+		  </ul>
+		
+	</body>
+</html>
